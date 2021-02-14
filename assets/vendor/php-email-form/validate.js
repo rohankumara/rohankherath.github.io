@@ -94,7 +94,7 @@
         i.next('.validate').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
-    if (ferror) return true;
+    if (ferror) return false;
 
     var this_form = $(this);
     var action = $(this).attr('action');
